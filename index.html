@@ -84,6 +84,7 @@
                 <img src="https://github.com/BrunoCafe7/images/raw/122e2a226d3ce25c8e3b6332f1f24fbfe445d0d0/branco-uem-modelo-01.png" alt="UEM" id="logo-uem" loading="lazy" class="h-8 md:h-10 transition-all duration-300" style="filter: none;">
                 <!-- A imagem do DFS precisa ficar branca inicialmente -->
                 <img src="https://github.com/BrunoCafe7/images/raw/122e2a226d3ce25c8e3b6332f1f24fbfe445d0d0/logo-dfs-03.png" alt="DFS" id="logo-dfs" loading="lazy" class="h-8 md:h-10 transition-all duration-300" style="filter: brightness(0) invert(1);">
+                <img src="https://github.com/BrunoCafe7/images/raw/0c277c01d9349e3095e77966510514ce25dd66f0/ccb-modelo-01.png" alt="CCB" id="logo-ccb" loading="lazy" class="h-8 md:h-10 transition-all duration-300" style="filter: brightness(0) invert(1);">
             </div>
             <nav class="hidden lg:flex space-x-8 text-white font-medium text-sm transition-colors duration-300" id="nav-links">
                 <a href="#universidade" class="hover:text-accent-green transition">A UEM</a>
@@ -255,123 +256,207 @@
                 <h2 class="text-3xl md:text-5xl font-bold text-uem-dark mb-4 tracking-tight">O que você vai aprender</h2>
                 <p class="text-lg md:text-xl text-gray-500">Grade curricular com base na Resolução UEM, atualizada e baseada em evidências.</p>
             </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-                <div class="bg-gray-50 rounded-3xl p-6 md:p-8 border border-gray-100 hover:border-blue-200 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 shadow-sm">
-                    <div class="flex items-center gap-4 mb-6">
-                        <span class="text-3xl md:text-4xl">🫀</span>
-                        <h3 class="text-xl md:text-2xl font-bold text-gray-900">Fisiologia do Exercício</h3>
+
+            <div class="max-w-4xl mx-auto space-y-4" id="curriculo-accordion">
+                <!-- Módulo 1 -->
+                <div class="disc-card bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <button class="disc-btn flex items-center justify-between w-full p-5 md:p-6 text-left" onclick="toggleDisciplina(this)">
+                        <div class="flex items-center gap-4">
+                            <span class="text-2xl md:text-3xl">🫀</span>
+                            <div>
+                                <h3 class="text-lg md:text-xl font-bold text-gray-900">Fisiologia do Exercício</h3>
+                                <p class="text-xs md:text-sm text-gray-500">7 tópicos</p>
+                            </div>
+                        </div>
+                        <span class="disc-icon transition-transform duration-300 text-gray-400"><i class="fas fa-chevron-down"></i></span>
+                    </button>
+                    <div class="disc-content max-h-0 overflow-hidden transition-all duration-300">
+                        <div class="px-5 md:px-6 pb-5 md:pb-6 border-t border-gray-100 pt-4">
+                            <ul class="space-y-2.5">
+                                <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-accent-green mt-2 shrink-0"></span> <span class="text-gray-700 text-sm md:text-base">Bioenergética</span></li>
+                                <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-accent-green mt-2 shrink-0"></span> <span class="text-gray-700 text-sm md:text-base">Fisiologia endócrina e exercício</span></li>
+                                <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-accent-green mt-2 shrink-0"></span> <span class="text-gray-700 text-sm md:text-base">Fisiologia cardiovascular e respiratória no exercício</span></li>
+                                <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-accent-green mt-2 shrink-0"></span> <span class="text-gray-700 text-sm md:text-base">Exercício e meio ambiente</span></li>
+                                <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-accent-green mt-2 shrink-0"></span> <span class="text-gray-700 text-sm md:text-base">Aptidão física</span></li>
+                                <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-accent-green mt-2 shrink-0"></span> <span class="text-gray-700 text-sm md:text-base">Atividade física em populações especiais</span></li>
+                                <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-accent-green mt-2 shrink-0"></span> <span class="text-gray-700 text-sm md:text-base">Variáveis fisiológicas e treinamento</span></li>
+                            </ul>
+                        </div>
                     </div>
-                    <ul class="space-y-3">
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent-green mt-1"></i> <span class="text-gray-700 text-sm md:text-base">Bioenergética</span></li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent-green mt-1"></i> <span class="text-gray-700 text-sm md:text-base">Fisiologia endócrina e exercício</span></li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent-green mt-1"></i> <span class="text-gray-700 text-sm md:text-base">Fisiologia cardiovascular e respiratória no exercício</span></li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent-green mt-1"></i> <span class="text-gray-700 text-sm md:text-base">Exercício e meio ambiente</span></li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent-green mt-1"></i> <span class="text-gray-700 text-sm md:text-base">Aptidão física</span></li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent-green mt-1"></i> <span class="text-gray-700 text-sm md:text-base">Atividade física em populações especiais</span></li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent-green mt-1"></i> <span class="text-gray-700 text-sm md:text-base">Variáveis fisiológicas e treinamento</span></li>
-                    </ul>
                 </div>
-                <div class="bg-gray-50 rounded-3xl p-6 md:p-8 border border-gray-100 hover:border-blue-200 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 shadow-sm">
-                    <div class="flex items-center gap-4 mb-6">
-                        <span class="text-3xl md:text-4xl">🧪</span>
-                        <h3 class="text-xl md:text-2xl font-bold text-gray-900">Tópicos Complementares em Ciências Fisiológicas</h3>
+
+                <!-- Módulo 2 -->
+                <div class="disc-card bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <button class="disc-btn flex items-center justify-between w-full p-5 md:p-6 text-left" onclick="toggleDisciplina(this)">
+                        <div class="flex items-center gap-4">
+                            <span class="text-2xl md:text-3xl">🧪</span>
+                            <div>
+                                <h3 class="text-lg md:text-xl font-bold text-gray-900">Tópicos Complementares em Ciências Fisiológicas</h3>
+                                <p class="text-xs md:text-sm text-gray-500">5 tópicos</p>
+                            </div>
+                        </div>
+                        <span class="disc-icon transition-transform duration-300 text-gray-400"><i class="fas fa-chevron-down"></i></span>
+                    </button>
+                    <div class="disc-content max-h-0 overflow-hidden transition-all duration-300">
+                        <div class="px-5 md:px-6 pb-5 md:pb-6 border-t border-gray-100 pt-4">
+                            <ul class="space-y-2.5">
+                                <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-accent-green mt-2 shrink-0"></span> <span class="text-gray-700 text-sm md:text-base">Fisiologia do tecido adiposo branco</span></li>
+                                <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-accent-green mt-2 shrink-0"></span> <span class="text-gray-700 text-sm md:text-base">Obesidade</span></li>
+                                <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-accent-green mt-2 shrink-0"></span> <span class="text-gray-700 text-sm md:text-base">Termorregulação</span></li>
+                                <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-accent-green mt-2 shrink-0"></span> <span class="text-gray-700 text-sm md:text-base">Fisiologia do tecido adiposo marrom</span></li>
+                                <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-accent-green mt-2 shrink-0"></span> <span class="text-gray-700 text-sm md:text-base">Tópicos em fisiologia integrativa e do exercício</span></li>
+                            </ul>
+                        </div>
                     </div>
-                    <ul class="space-y-3">
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent-green mt-1"></i> <span class="text-gray-700 text-sm md:text-base">Fisiologia do tecido adiposo branco</span></li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent-green mt-1"></i> <span class="text-gray-700 text-sm md:text-base">Obesidade</span></li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent-green mt-1"></i> <span class="text-gray-700 text-sm md:text-base">Termorregulação</span></li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent-green mt-1"></i> <span class="text-gray-700 text-sm md:text-base">Fisiologia do tecido adiposo marrom</span></li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent-green mt-1"></i> <span class="text-gray-700 text-sm md:text-base">Tópicos em fisiologia integrativa e do exercício</span></li>
-                    </ul>
                 </div>
-                <div class="bg-gray-50 rounded-3xl p-6 md:p-8 border border-gray-100 hover:border-blue-200 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 shadow-sm">
-                    <div class="flex items-center gap-4 mb-6">
-                        <span class="text-3xl md:text-4xl">🫁</span>
-                        <h3 class="text-xl md:text-2xl font-bold text-gray-900">Funcionamento Integrado dos Sistemas de Órgãos</h3>
+
+                <!-- Módulo 3 -->
+                <div class="disc-card bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <button class="disc-btn flex items-center justify-between w-full p-5 md:p-6 text-left" onclick="toggleDisciplina(this)">
+                        <div class="flex items-center gap-4">
+                            <span class="text-2xl md:text-3xl">🫁</span>
+                            <div>
+                                <h3 class="text-lg md:text-xl font-bold text-gray-900">Funcionamento Integrado dos Sistemas de Órgãos</h3>
+                                <p class="text-xs md:text-sm text-gray-500">14 tópicos</p>
+                            </div>
+                        </div>
+                        <span class="disc-icon transition-transform duration-300 text-gray-400"><i class="fas fa-chevron-down"></i></span>
+                    </button>
+                    <div class="disc-content max-h-0 overflow-hidden transition-all duration-300">
+                        <div class="px-5 md:px-6 pb-5 md:pb-6 border-t border-gray-100 pt-4">
+                            <ul class="space-y-2.5">
+                                <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-accent-green mt-2 shrink-0"></span> <span class="text-gray-700 text-sm md:text-base">Propriedades do músculo cardíaco</span></li>
+                                <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-accent-green mt-2 shrink-0"></span> <span class="text-gray-700 text-sm md:text-base">Regulação do débito cardíaco</span></li>
+                                <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-accent-green mt-2 shrink-0"></span> <span class="text-gray-700 text-sm md:text-base">Hemodinâmica</span></li>
+                                <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-accent-green mt-2 shrink-0"></span> <span class="text-gray-700 text-sm md:text-base">Controle local e humoral do fluxo sanguíneo</span></li>
+                                <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-accent-green mt-2 shrink-0"></span> <span class="text-gray-700 text-sm md:text-base">Dinâmica capilar</span></li>
+                                <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-accent-green mt-2 shrink-0"></span> <span class="text-gray-700 text-sm md:text-base">Mecânica da ventilação pulmonar</span></li>
+                                <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-accent-green mt-2 shrink-0"></span> <span class="text-gray-700 text-sm md:text-base">Trocas e transportes dos gases</span></li>
+                                <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-accent-green mt-2 shrink-0"></span> <span class="text-gray-700 text-sm md:text-base">Regulação da respiração</span></li>
+                                <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-accent-green mt-2 shrink-0"></span> <span class="text-gray-700 text-sm md:text-base">Equilíbrio ácido-base</span></li>
+                                <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-accent-green mt-2 shrink-0"></span> <span class="text-gray-700 text-sm md:text-base">Motilidade e controle do trato gastrointestinal</span></li>
+                                <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-accent-green mt-2 shrink-0"></span> <span class="text-gray-700 text-sm md:text-base">Funções e regulação das secreções gástricas</span></li>
+                                <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-accent-green mt-2 shrink-0"></span> <span class="text-gray-700 text-sm md:text-base">Digestão, absorção e aspectos nutricionais</span></li>
+                                <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-accent-green mt-2 shrink-0"></span> <span class="text-gray-700 text-sm md:text-base">Processos renais e controle do volume e osmolaridade</span></li>
+                                <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-accent-green mt-2 shrink-0"></span> <span class="text-gray-700 text-sm md:text-base">Controle da pressão arterial</span></li>
+                            </ul>
+                        </div>
                     </div>
-                    <ul class="space-y-3">
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent-green mt-1"></i> <span class="text-gray-700 text-sm md:text-base">Propriedades do músculo cardíaco</span></li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent-green mt-1"></i> <span class="text-gray-700 text-sm md:text-base">Regulação do débito cardíaco</span></li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent-green mt-1"></i> <span class="text-gray-700 text-sm md:text-base">Hemodinâmica</span></li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent-green mt-1"></i> <span class="text-gray-700 text-sm md:text-base">Controle local e humoral do fluxo sanguíneo</span></li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent-green mt-1"></i> <span class="text-gray-700 text-sm md:text-base">Dinâmica capilar</span></li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent-green mt-1"></i> <span class="text-gray-700 text-sm md:text-base">Mecânica da ventilação pulmonar</span></li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent-green mt-1"></i> <span class="text-gray-700 text-sm md:text-base">Trocas e transportes dos gases</span></li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent-green mt-1"></i> <span class="text-gray-700 text-sm md:text-base">Regulação da respiração</span></li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent-green mt-1"></i> <span class="text-gray-700 text-sm md:text-base">Equilíbrio ácido-base</span></li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent-green mt-1"></i> <span class="text-gray-700 text-sm md:text-base">Motilidade e controle do trato gastrointestinal</span></li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent-green mt-1"></i> <span class="text-gray-700 text-sm md:text-base">Funções e regulação das secreções gástricas</span></li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent-green mt-1"></i> <span class="text-gray-700 text-sm md:text-base">Digestão, absorção e aspectos nutricionais</span></li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent-green mt-1"></i> <span class="text-gray-700 text-sm md:text-base">Processos renais e controle do volume e osmolaridade</span></li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent-green mt-1"></i> <span class="text-gray-700 text-sm md:text-base">Controle da pressão arterial</span></li>
-                    </ul>
                 </div>
-                <div class="bg-gray-50 rounded-3xl p-6 md:p-8 border border-gray-100 hover:border-blue-200 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 shadow-sm">
-                    <div class="flex items-center gap-4 mb-6">
-                        <span class="text-3xl md:text-4xl">🧬</span>
-                        <h3 class="text-xl md:text-2xl font-bold text-gray-900">Abordagem Teórico-Prática do Controle do Organismo Humano pelo Sistema Endócrino</h3>
+
+                <!-- Módulo 4 -->
+                <div class="disc-card bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <button class="disc-btn flex items-center justify-between w-full p-5 md:p-6 text-left" onclick="toggleDisciplina(this)">
+                        <div class="flex items-center gap-4">
+                            <span class="text-2xl md:text-3xl">🧬</span>
+                            <div>
+                                <h3 class="text-lg md:text-xl font-bold text-gray-900">Abordagem Teórico-Prática do Controle do Organismo Humano pelo Sistema Endócrino</h3>
+                                <p class="text-xs md:text-sm text-gray-500">6 tópicos</p>
+                            </div>
+                        </div>
+                        <span class="disc-icon transition-transform duration-300 text-gray-400"><i class="fas fa-chevron-down"></i></span>
+                    </button>
+                    <div class="disc-content max-h-0 overflow-hidden transition-all duration-300">
+                        <div class="px-5 md:px-6 pb-5 md:pb-6 border-t border-gray-100 pt-4">
+                            <ul class="space-y-2.5">
+                                <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-accent-green mt-2 shrink-0"></span> <span class="text-gray-700 text-sm md:text-base">Mecanismos de ação hormonal</span></li>
+                                <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-accent-green mt-2 shrink-0"></span> <span class="text-gray-700 text-sm md:text-base">Integração neuro-endócrina: eixo hipotálamo-hipofisário</span></li>
+                                <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-accent-green mt-2 shrink-0"></span> <span class="text-gray-700 text-sm md:text-base">Hormônios que controlam o crescimento e o desenvolvimento corporal</span></li>
+                                <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-accent-green mt-2 shrink-0"></span> <span class="text-gray-700 text-sm md:text-base">Controle endócrino do metabolismo energético</span></li>
+                                <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-accent-green mt-2 shrink-0"></span> <span class="text-gray-700 text-sm md:text-base">Diferenciação sexual</span></li>
+                                <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-accent-green mt-2 shrink-0"></span> <span class="text-gray-700 text-sm md:text-base">Controle hormonal da função reprodutora masculina e feminina</span></li>
+                            </ul>
+                        </div>
                     </div>
-                    <ul class="space-y-3">
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent-green mt-1"></i> <span class="text-gray-700 text-sm md:text-base">Mecanismos de ação hormonal</span></li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent-green mt-1"></i> <span class="text-gray-700 text-sm md:text-base">Integração neuro-endócrina: eixo hipotálamo-hipofisário</span></li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent-green mt-1"></i> <span class="text-gray-700 text-sm md:text-base">Hormônios que controlam o crescimento e o desenvolvimento corporal</span></li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent-green mt-1"></i> <span class="text-gray-700 text-sm md:text-base">Controle endócrino do metabolismo energético</span></li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent-green mt-1"></i> <span class="text-gray-700 text-sm md:text-base">Diferenciação sexual</span></li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent-green mt-1"></i> <span class="text-gray-700 text-sm md:text-base">Controle hormonal da função reprodutora masculina e feminina</span></li>
-                    </ul>
                 </div>
-                <div class="bg-gray-50 rounded-3xl p-6 md:p-8 border border-gray-100 hover:border-blue-200 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 shadow-sm">
-                    <div class="flex items-center gap-4 mb-6">
-                        <span class="text-3xl md:text-4xl">🧠</span>
-                        <h3 class="text-xl md:text-2xl font-bold text-gray-900">Neurofisiologia: Teoria e Prática</h3>
+
+                <!-- Módulo 5 -->
+                <div class="disc-card bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <button class="disc-btn flex items-center justify-between w-full p-5 md:p-6 text-left" onclick="toggleDisciplina(this)">
+                        <div class="flex items-center gap-4">
+                            <span class="text-2xl md:text-3xl">🧠</span>
+                            <div>
+                                <h3 class="text-lg md:text-xl font-bold text-gray-900">Neurofisiologia: Teoria e Prática</h3>
+                                <p class="text-xs md:text-sm text-gray-500">8 tópicos</p>
+                            </div>
+                        </div>
+                        <span class="disc-icon transition-transform duration-300 text-gray-400"><i class="fas fa-chevron-down"></i></span>
+                    </button>
+                    <div class="disc-content max-h-0 overflow-hidden transition-all duration-300">
+                        <div class="px-5 md:px-6 pb-5 md:pb-6 border-t border-gray-100 pt-4">
+                            <ul class="space-y-2.5">
+                                <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-accent-green mt-2 shrink-0"></span> <span class="text-gray-700 text-sm md:text-base">Princípios de fisiologia sensorial</span></li>
+                                <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-accent-green mt-2 shrink-0"></span> <span class="text-gray-700 text-sm md:text-base">Sensações somáticas e químicas</span></li>
+                                <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-accent-green mt-2 shrink-0"></span> <span class="text-gray-700 text-sm md:text-base">Fisiologia da visão, da audição e do equilíbrio</span></li>
+                                <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-accent-green mt-2 shrink-0"></span> <span class="text-gray-700 text-sm md:text-base">Fisiologia da dor e os sistemas de analgesia</span></li>
+                                <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-accent-green mt-2 shrink-0"></span> <span class="text-gray-700 text-sm md:text-base">Controle motor somático</span></li>
+                                <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-accent-green mt-2 shrink-0"></span> <span class="text-gray-700 text-sm md:text-base">Sistemas neurovegetativos</span></li>
+                                <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-accent-green mt-2 shrink-0"></span> <span class="text-gray-700 text-sm md:text-base">Sistema límbico, Emoções, Estresse e Doenças psicossomáticas</span></li>
+                                <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-accent-green mt-2 shrink-0"></span> <span class="text-gray-700 text-sm md:text-base">Ritmos biológicos</span></li>
+                            </ul>
+                        </div>
                     </div>
-                    <ul class="space-y-3">
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent-green mt-1"></i> <span class="text-gray-700 text-sm md:text-base">Princípios de fisiologia sensorial</span></li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent-green mt-1"></i> <span class="text-gray-700 text-sm md:text-base">Sensações somáticas e químicas</span></li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent-green mt-1"></i> <span class="text-gray-700 text-sm md:text-base">Fisiologia da visão, da audição e do equilíbrio</span></li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent-green mt-1"></i> <span class="text-gray-700 text-sm md:text-base">Fisiologia da dor e os sistemas de analgesia</span></li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent-green mt-1"></i> <span class="text-gray-700 text-sm md:text-base">Controle motor somático</span></li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent-green mt-1"></i> <span class="text-gray-700 text-sm md:text-base">Sistemas neurovegetativos</span></li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent-green mt-1"></i> <span class="text-gray-700 text-sm md:text-base">Sistema límbico, Emoções, Estresse e Doenças psicossomáticas</span></li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent-green mt-1"></i> <span class="text-gray-700 text-sm md:text-base">Ritmos biológicos</span></li>
-                    </ul>
                 </div>
-                <div class="bg-gray-50 rounded-3xl p-6 md:p-8 border border-gray-100 hover:border-blue-200 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 shadow-sm">
-                    <div class="flex items-center gap-4 mb-6">
-                        <span class="text-3xl md:text-4xl">🔬</span>
-                        <h3 class="text-xl md:text-2xl font-bold text-gray-900">Fisiologia Celular</h3>
+
+                <!-- Módulo 6 -->
+                <div class="disc-card bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <button class="disc-btn flex items-center justify-between w-full p-5 md:p-6 text-left" onclick="toggleDisciplina(this)">
+                        <div class="flex items-center gap-4">
+                            <span class="text-2xl md:text-3xl">🔬</span>
+                            <div>
+                                <h3 class="text-lg md:text-xl font-bold text-gray-900">Fisiologia Celular</h3>
+                                <p class="text-xs md:text-sm text-gray-500">8 tópicos</p>
+                            </div>
+                        </div>
+                        <span class="disc-icon transition-transform duration-300 text-gray-400"><i class="fas fa-chevron-down"></i></span>
+                    </button>
+                    <div class="disc-content max-h-0 overflow-hidden transition-all duration-300">
+                        <div class="px-5 md:px-6 pb-5 md:pb-6 border-t border-gray-100 pt-4">
+                            <ul class="space-y-2.5">
+                                <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-accent-green mt-2 shrink-0"></span> <span class="text-gray-700 text-sm md:text-base">Conceito de meio interno e homeostase</span></li>
+                                <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-accent-green mt-2 shrink-0"></span> <span class="text-gray-700 text-sm md:text-base">Estruturas e funções das membranas celulares</span></li>
+                                <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-accent-green mt-2 shrink-0"></span> <span class="text-gray-700 text-sm md:text-base">Tonicidade e osmolaridade</span></li>
+                                <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-accent-green mt-2 shrink-0"></span> <span class="text-gray-700 text-sm md:text-base">Transporte de substâncias através da membrana celular</span></li>
+                                <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-accent-green mt-2 shrink-0"></span> <span class="text-gray-700 text-sm md:text-base">Potenciais de membrana e codificação da informação celular</span></li>
+                                <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-accent-green mt-2 shrink-0"></span> <span class="text-gray-700 text-sm md:text-base">Comunicação celular</span></li>
+                                <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-accent-green mt-2 shrink-0"></span> <span class="text-gray-700 text-sm md:text-base">Metabolismo celular</span></li>
+                                <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-accent-green mt-2 shrink-0"></span> <span class="text-gray-700 text-sm md:text-base">Tecido muscular</span></li>
+                            </ul>
+                        </div>
                     </div>
-                    <ul class="space-y-3">
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent-green mt-1"></i> <span class="text-gray-700 text-sm md:text-base">Conceito de meio interno e homeostase</span></li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent-green mt-1"></i> <span class="text-gray-700 text-sm md:text-base">Estruturas e funções das membranas celulares</span></li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent-green mt-1"></i> <span class="text-gray-700 text-sm md:text-base">Tonicidade e osmolaridade</span></li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent-green mt-1"></i> <span class="text-gray-700 text-sm md:text-base">Transporte de substâncias através da membrana celular</span></li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent-green mt-1"></i> <span class="text-gray-700 text-sm md:text-base">Potenciais de membrana e codificação da informação celular</span></li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent-green mt-1"></i> <span class="text-gray-700 text-sm md:text-base">Comunicação celular</span></li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent-green mt-1"></i> <span class="text-gray-700 text-sm md:text-base">Metabolismo celular</span></li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent-green mt-1"></i> <span class="text-gray-700 text-sm md:text-base">Tecido muscular</span></li>
-                    </ul>
                 </div>
-                <div class="bg-gray-50 rounded-3xl p-6 md:p-8 border border-gray-100 hover:border-blue-200 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 shadow-sm">
-                    <div class="flex items-center gap-4 mb-6">
-                        <span class="text-3xl md:text-4xl">📖</span>
-                        <h3 class="text-xl md:text-2xl font-bold text-gray-900">Ensino e Pesquisa em Ciências Fisiológicas</h3>
+
+                <!-- Módulo 7 -->
+                <div class="disc-card bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <button class="disc-btn flex items-center justify-between w-full p-5 md:p-6 text-left" onclick="toggleDisciplina(this)">
+                        <div class="flex items-center gap-4">
+                            <span class="text-2xl md:text-3xl">📖</span>
+                            <div>
+                                <h3 class="text-lg md:text-xl font-bold text-gray-900">Ensino e Pesquisa em Ciências Fisiológicas</h3>
+                                <p class="text-xs md:text-sm text-gray-500">10 tópicos</p>
+                            </div>
+                        </div>
+                        <span class="disc-icon transition-transform duration-300 text-gray-400"><i class="fas fa-chevron-down"></i></span>
+                    </button>
+                    <div class="disc-content max-h-0 overflow-hidden transition-all duration-300">
+                        <div class="px-5 md:px-6 pb-5 md:pb-6 border-t border-gray-100 pt-4">
+                            <ul class="space-y-2.5">
+                                <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-accent-green mt-2 shrink-0"></span> <span class="text-gray-700 text-sm md:text-base">Regras e convenções para divisão de textos científicos</span></li>
+                                <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-accent-green mt-2 shrink-0"></span> <span class="text-gray-700 text-sm md:text-base">Elaboração de relatórios de aulas práticas</span></li>
+                                <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-accent-green mt-2 shrink-0"></span> <span class="text-gray-700 text-sm md:text-base">Referências bibliográficas e normas ABNT</span></li>
+                                <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-accent-green mt-2 shrink-0"></span> <span class="text-gray-700 text-sm md:text-base">Redação científica: tipos, regras e estruturas</span></li>
+                                <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-accent-green mt-2 shrink-0"></span> <span class="text-gray-700 text-sm md:text-base">Trabalhos de experimentação e revisão de literatura</span></li>
+                                <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-accent-green mt-2 shrink-0"></span> <span class="text-gray-700 text-sm md:text-base">Normas para elaboração do projeto de monografia</span></li>
+                                <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-accent-green mt-2 shrink-0"></span> <span class="text-gray-700 text-sm md:text-base">Normas para elaboração e apresentação da monografia</span></li>
+                                <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-accent-green mt-2 shrink-0"></span> <span class="text-gray-700 text-sm md:text-base">Noções de estatística aplicada às Ciências Fisiológicas</span></li>
+                                <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-accent-green mt-2 shrink-0"></span> <span class="text-gray-700 text-sm md:text-base">Ética na experimentação em Ciências Fisiológicas</span></li>
+                                <li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-accent-green mt-2 shrink-0"></span> <span class="text-gray-700 text-sm md:text-base">Aulas práticas e atividades integrativas</span></li>
+                            </ul>
+                        </div>
                     </div>
-                    <ul class="space-y-3">
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent-green mt-1"></i> <span class="text-gray-700 text-sm md:text-base">Regras e convenções para divisão de textos científicos</span></li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent-green mt-1"></i> <span class="text-gray-700 text-sm md:text-base">Elaboração de relatórios de aulas práticas</span></li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent-green mt-1"></i> <span class="text-gray-700 text-sm md:text-base">Referências bibliográficas e normas ABNT</span></li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent-green mt-1"></i> <span class="text-gray-700 text-sm md:text-base">Redação científica: tipos, regras e estruturas</span></li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent-green mt-1"></i> <span class="text-gray-700 text-sm md:text-base">Trabalhos de experimentação e revisão de literatura</span></li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent-green mt-1"></i> <span class="text-gray-700 text-sm md:text-base">Normas para elaboração do projeto de monografia</span></li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent-green mt-1"></i> <span class="text-gray-700 text-sm md:text-base">Normas para elaboração e apresentação da monografia</span></li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent-green mt-1"></i> <span class="text-gray-700 text-sm md:text-base">Noções de estatística aplicada às Ciências Fisiológicas</span></li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent-green mt-1"></i> <span class="text-gray-700 text-sm md:text-base">Ética na experimentação em Ciências Fisiológicas</span></li>
-                        <li class="flex items-start gap-3"><i class="fas fa-check text-accent-green mt-1"></i> <span class="text-gray-700 text-sm md:text-base">Aulas práticas e atividades integrativas</span></li>
-                    </ul>
                 </div>
             </div>
+
             <div class="text-center mt-10">
                 <a href="https://fadec.conveniar.com.br/Eventos/Forms/Servicos/EventoDados.aspx?action=30" target="_blank" class="inline-block bg-accent-green hover:bg-accent-hover text-white font-bold py-3 px-8 rounded-lg shadow-md transition-all hover:scale-105">
                     Quero me inscrever <i class="fas fa-arrow-right ml-1"></i>
@@ -595,6 +680,7 @@
                 <div class="flex items-center gap-2 mb-4">
                     <img src="https://github.com/BrunoCafe7/images/raw/122e2a226d3ce25c8e3b6332f1f24fbfe445d0d0/branco-uem-modelo-01.png" alt="UEM" loading="lazy" class="h-6 opacity-70 hover:opacity-100 transition">
                     <img src="https://github.com/BrunoCafe7/images/raw/122e2a226d3ce25c8e3b6332f1f24fbfe445d0d0/logo-dfs-03.png" alt="DFS" loading="lazy" class="h-6 opacity-70 hover:opacity-100 transition">
+                    <img src="https://github.com/BrunoCafe7/images/raw/0c277c01d9349e3095e77966510514ce25dd66f0/ccb-modelo-01.png" alt="CCB" loading="lazy" class="h-6 opacity-70 hover:opacity-100 transition">
                 </div>
                 <p class="text-sm leading-relaxed max-w-sm">Universidade Estadual de Maringá<br>Departamento de Ciências Fisiológicas<br>Avenida Colombo, 5790 - Bloco H79, sala 111<br>CEP 87020-900 - Maringá-PR</p>
             </div>
@@ -683,6 +769,7 @@
             const links = document.getElementById('nav-links');
             const logoUem = document.getElementById('logo-uem');
             const logoDfs = document.getElementById('logo-dfs');
+            const logoCcb = document.getElementById('logo-ccb');
             const scrollBtn = document.getElementById('scroll-top-btn');
             
             if (window.scrollY > 50) {
@@ -691,7 +778,8 @@
                 links.classList.remove('text-white');
                 links.classList.add('text-gray-600');
                 logoUem.style.filter = "brightness(0)"; 
-                logoDfs.style.filter = "none"; 
+                logoDfs.style.filter = "none";
+                if (logoCcb) logoCcb.style.filter = "none";
             } else {
                 header.classList.add('bg-transparent', 'py-4');
                 header.classList.remove('bg-white', 'shadow-md', 'py-3');
@@ -699,6 +787,7 @@
                 links.classList.remove('text-gray-600');
                 logoUem.style.filter = "none";
                 logoDfs.style.filter = "brightness(0) invert(1)";
+                if (logoCcb) logoCcb.style.filter = "brightness(0) invert(1)";
             }
 
             // Scroll to Top Button
@@ -826,6 +915,27 @@
                 });
             });
         })();
+
+        // Accordion Disciplinas
+        function toggleDisciplina(btn) {
+            const content = btn.nextElementSibling;
+            const icon = btn.querySelector('.disc-icon');
+            const isOpen = !content.classList.contains('max-h-0');
+
+            document.querySelectorAll('.disc-content').forEach(c => {
+                c.classList.add('max-h-0');
+                c.classList.remove('max-h-[2000px]');
+            });
+            document.querySelectorAll('.disc-icon').forEach(i => {
+                i.classList.remove('rotate-180');
+            });
+
+            if (!isOpen) {
+                content.classList.remove('max-h-0');
+                content.classList.add('max-h-[2000px]');
+                icon.classList.add('rotate-180');
+            }
+        }
 
         // Modal Professor
         function openProfModal(card) {
